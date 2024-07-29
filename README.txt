@@ -2,7 +2,7 @@
 
 Please follow the steps in this README to run the "tausworthe.py" file and the application in the "app.py" file.
 
-1. Download "ISYE6644_FinalProject_rkang47.zip" and extract the contents into a new folder.
+1. Download this repository.
 2. Do not delete or add anything to the folder. Do not move any of the files within the folder or subfolder.
 3. The subfolder "templates" should contain "index.html" and "results.html".
    - These files are necessary when running the "app.py" file.
