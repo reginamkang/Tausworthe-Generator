@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tausworthe Generator</title>
+</head>
+<body>
+    <h1>Tausworthe Generator</h1>
+    <h3>Please note that different values of r, q, and l can affect the Tausworthe generator's ability to create approximately i.i.d. Uniform(0, 1) PRN's.</h3>
+    <h3>The default values have been tested and are effective at generating approximately i.i.d. Uniform(0, 1) PRN's.</h3>
+    <form action="/run_function" method="post">
+        <label for="r">Please enter a value for r:</label>
+        <input type="text" name="r" value="{{ 13 }}">
+        <br>
+        <label for="q">Please enter a value for q:</label>
+        <input type="text" name="q" value="{{ 31 }}">
+        <br>
+        <label for="l">Please enter a value for l:</label>
+        <input type="text" name="l" value="{{ 20 }}">
+        <br>
+        <label for="rvs">Please enter the number of PRN's you want to generate (must not be greater than 2<sup>q</sup> - 1):</label>
+        <input type="text" name="rvs" value="{{ 16500 }}">
+        <br>
+        <label for="bin_list">Please enter a list of binary numbers with a length of q:</label>
+        <input type="text" name="bin_list" value="{{ [0,1,0,1,0,1,1,1,1,0,1,1,0,1,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,1] }}">
+        <br>
+        <label for="ind">Please enter an index to see the value at that index:</label>
+        <input type="text" name="ind" value="{{ 0 }}">
+        <br>
+        <button type="submit">Run</button>
+    </form>
+</body>
+</html>
